@@ -52,8 +52,7 @@ func main() {
 	fmt.Println(strings.HasSuffix(stringVar2, "g"))
 	fmt.Println(strings.HasPrefix(stringVar1, "L"))
 
-	//using the join function in the strnigs library
-
+	//using the join function in the string library
 	mySlice := []string{"Here", "Iam", "Learning", "Go", "Language"}
 	fmt.Printf("The type of the mySlice var is : %T  before Join\n ", mySlice)
 	fmt.Println(strings.Join(mySlice, " <--> "))
