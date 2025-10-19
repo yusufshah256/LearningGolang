@@ -1,4 +1,4 @@
-package main
+package quadratic
 
 import (
 	"math"
@@ -47,11 +47,11 @@ func TestSolveQuadratic(t *testing.T) {
 	// Run all test cases
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			x1, x2, hasRealRoots := solveQuadratic(tt.a, tt.b, tt.c)
+			x1, x2, hasRealRoots := SolveQuadratic(tt.a, tt.b, tt.c)
 
 			// Check if hasRealRoots matches expected
 			if hasRealRoots != tt.wantRealRoot {
-				t.Errorf("solveQuadratic(%v, %v, %v) hasRealRoots = %v, want %v",
+				t.Errorf("SolveQuadratic(%v, %v, %v) hasRealRoots = %v, want %v",
 					tt.a, tt.b, tt.c, hasRealRoots, tt.wantRealRoot)
 			}
 
